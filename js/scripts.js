@@ -53,3 +53,53 @@ window.addEventListener('DOMContentLoaded', event => {
 document.querySelector('.download-btn').addEventListener('click', () => {
     alert('Please you can see portfolio instead of cv');
 });
+
+
+// let gallary = [
+//     'https://github.com/Asmamaw-Abeba/image/blob/main/img1.jpg',
+//     'https://github.com/Asmamaw-Abeba/image/blob/main/img2.jpg',
+//     'https://github.com/Asmamaw-Abeba/image/blob/main/img3.jpg',
+//     'https://github.com/Asmamaw-Abeba/image/blob/main/img4.jpg'
+// ];
+
+// const image = document.querySelector('.images');
+// let  index = 0;
+
+// // chage image function
+// function changeImage() {
+//     image.src = gallary[index];
+//     index = (index + 1) % gallary.length;
+//     //slideController(index);
+//   }
+
+
+let colorArr = ['green', 'blue', 'orange', 'yellow'];
+let i = 0;
+function loopColor(colorArr) {
+    let currentColor = colorArr[i];
+    i = (i + 1) % colorArr.length;
+    return currentColor;
+}
+
+// setInterval(() => {
+//     changeImage();
+// }, 2000);
+
+setInterval(() => {
+    let myName = $('.name');
+    myName.fadeToggle(2000);
+    myName.css("color", loopColor(colorArr));
+}, 2000);
+
+
+setInterval(() => {
+    let myDesc = $('.description');
+    myDesc.slideToggle(2000);
+    myDesc.css({
+        "background": colorArr[i + 1],
+         padding: 20,
+         borderRadius: 10,
+    })
+    myDesc.css("color", loopColor(colorArr));
+}, 3000);
+

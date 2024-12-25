@@ -8134,14 +8134,14 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-image {
+/* .bg-image {
   background-color: blueviolet;
   background-image: url('../assets/img/cover-image.jpg') !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 .bg-primary {
   --bs-bg-opacity: 1;
