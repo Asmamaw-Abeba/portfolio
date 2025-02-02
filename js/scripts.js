@@ -73,7 +73,7 @@ document.querySelector('.download-btn').addEventListener('click', () => {
 //   }
 
 
-let colorArr = ['green', 'blue', 'orange', 'yellow'];
+let colorArr = ['black','black green', 'orange', 'white'];
 let i = 0;
 function loopColor(colorArr) {
     let currentColor = colorArr[i];
